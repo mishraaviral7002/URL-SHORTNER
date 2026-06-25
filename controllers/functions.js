@@ -38,7 +38,7 @@ async function getter(req, res ){
             longUrl: target
         });
 
-        return res.json({answer  :final});
+        return res.json({shortUrl  :final});
 
         
     }
