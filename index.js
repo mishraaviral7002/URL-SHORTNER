@@ -9,6 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 connector()
 
+
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+
 app.get("/" , (req, res)=>{
     const reply = `
         <h1>
